@@ -12,9 +12,10 @@ ENV CI 1
 
 FROM dummy AS getter
 
-RUN zephyr 
-
-  python3-pip \
+RUN zypper --non-interactive patch --with-update --with-optional && \
+    zypper --non-interactive update && \
+    zypper install -y \
+    python3-pip \
   python3 \
   python3-devel \
   #ninja \
