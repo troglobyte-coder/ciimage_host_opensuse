@@ -18,7 +18,7 @@ RUN zypper --non-interactive patch --with-update --with-optional && \
     python3-pip \
     python3 \
     python3-devel \
-    ncurses \
+    ncurses-devel \
     git \
     patch \
     elfutils \
