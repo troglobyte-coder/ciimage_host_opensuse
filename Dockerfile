@@ -16,14 +16,14 @@ RUN zypper --non-interactive patch --with-update --with-optional && \
     zypper --non-interactive update && \
     zypper install -y \
     python3-pip \
-  python3 \
-  python3-devel \
-  #ninja \
-  git \
-  patch \
-  elfutils \
-  gcc \
-  gcc-c++
+    python3 \
+    python3-devel \
+    ncurses \
+    git \
+    patch \
+    elfutils \
+    gcc \
+    gcc-c++
 
 RUN pip3 -q install --upgrade pip \
     && python3 -m pip -q install \
